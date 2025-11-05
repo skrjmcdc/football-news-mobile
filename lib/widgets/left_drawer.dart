@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_news/menu.dart';
-// TODO: Import halaman NewsFormPage jika sudah dibuat
+import 'package:football_news/menu.dart';
+import 'package:football_news/newslist_form.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -55,9 +56,11 @@ class LeftDrawer extends StatelessWidget {
             title: const Text('Add News'),
             // Bagian redirection ke NewsFormPage
             onTap: () {
-              /*
-              TODO: Buat routing ke NewsFormPage di sini.
-              */
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NewsFormPage(),
+              ));
             },
           ),
           // TODO: Buat ListTile baru untuk ke halaman melihat news
