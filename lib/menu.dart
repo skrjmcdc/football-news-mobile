@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:football_news/widgets/left_drawer.dart';
+import 'package:football_news/newslist_form.dart';
 
 /*
 class MyHomePage extends StatefulWidget {
@@ -176,6 +177,15 @@ class ItemCard extends StatelessWidget {
             ..showSnackBar(
                 SnackBar(content: Text("Kamu telah menekan tombol ${item.name}!"))
             );
+          // Navigate ke route yang sesuai (tergantung jenis tombol)
+          if (item.name == "Add News") {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NewsFormPage(),
+              ));
+
+          }
         },
         // Container untuk menyimpan Icon dan Text
         child: Container(

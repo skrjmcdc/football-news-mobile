@@ -37,7 +37,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
             'Form Tambah Berita',
           ),
         ),
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.red[700],
         foregroundColor: Colors.white,
       ),
       drawer: LeftDrawer(),
@@ -163,7 +163,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Colors.indigo),
+                          MaterialStateProperty.all(Colors.red[700]),
                     ),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
