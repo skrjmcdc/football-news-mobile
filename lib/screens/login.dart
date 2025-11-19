@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                   const Text(
                     'Login now.',
                     style: TextStyle(
-                      fontSize: 24.0,
+                      fontSize: 48.0,
                       fontWeight: FontWeight.bold,
                       color: Colors.red,
                     ),
