@@ -14,7 +14,7 @@ class LoginApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Login!!!!!!!!!!!',
+      title: 'Login or die.',
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.red)
