@@ -58,10 +58,11 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Text(
-                    'Login',
+                    'Login now.',
                     style: TextStyle(
                       fontSize: 24.0,
                       fontWeight: FontWeight.bold,
+                      color: Colors.red,
                     ),
                   ),
                   const SizedBox(height: 30.0),
