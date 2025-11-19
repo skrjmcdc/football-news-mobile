@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_news/screens/menu.dart';
 import 'package:football_news/screens/newslist_form.dart';
+import 'package:football_news/screens/news_entry_list.dart';
 import 'package:football_news/screens/login.dart';
 import 'package:pbp_django_auth/pbp_django_auth.dart';
 import 'package:provider/provider.dart';
@@ -36,9 +37,14 @@ class ItemCard extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => NewsFormPage(),
                 ));
-
-          }
-          else if (item.name == "Logout") {
+          } else if (item.name == "See Football News") {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const NewsEntryListPage()
+                ),
+            );
+          } else if (item.name == "Logout") {
               final response = await request.logout(
                   "http://localhost:8000/auth/logout/");
               String message = response["message"];
